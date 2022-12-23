@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -14,12 +12,18 @@ public class Main {
 
     public static void task1() {
         System.out.println("Задача 1");
-        int a;
-        byte b;
-        short c;
-        long d;
-        float e;
-        double f;
+        int bigNumber = 5555;
+        byte ot128do127 = 5;
+        short shortNumber = 3333;
+        long biggestNumber = 213123123213L;
+        float drobnoe = 1.12121f;
+        double drobnoe2 = 4.232323;
+        System.out.println("Значение переменной bigNumber с типом int равно " + bigNumber);
+        System.out.println("Значение переменной ot128do127 с типом byte равно " + ot128do127);
+        System.out.println("Значение переменной shortNumber с типом short равно " + shortNumber);
+        System.out.println("Значение переменной biggestNumber с типом long равно " + biggestNumber);
+        System.out.println("Значение переменной drobnoe с типом float равно " + drobnoe);
+        System.out.println("Значение переменной drobnoe2 с типом double равно " + drobnoe2);
     }
 
     public static void task2() {
@@ -27,10 +31,10 @@ public class Main {
         byte b = 67;
         short c = 569;
         short c1 = -159;
-        short c2 = 27897;
+        int  c2 = 27897;
         long d = 987678965549L;
         float e = 27.12f;
-        float f = 2.786f;
+        double f = 2.786;
     }
 
     public static void task3() {
@@ -108,18 +112,18 @@ public class Main {
         int mashaSalary = 67760;
         int denisSalary = 83690;
         int kristinaSalary = 76230;
-        int mashaNewSalary = mashaSalary + (mashaSalary / 100 * 10);
-        int denisNewSalary = denisSalary + (denisSalary / 100 * 10);
-        int kristinaNewSalary = kristinaSalary + (kristinaSalary / 100 * 10);
+        double mashaNewSalary = mashaSalary * 1.1;
+        double denisNewSalary = denisSalary * 1.1;
+        double kristinaNewSalary = kristinaSalary * 1.1;
         int mashaSalaryYear = mashaSalary * 12;
         int denisSalaryYear = denisSalary * 12;
         int kristinaSalaryYear = kristinaSalary * 12;
-        int mashaNewSalaryYear = mashaNewSalary * 12;
-        int denisNewSalaryYear = denisNewSalary * 12;
-        int kristinaNewSalaryYear = kristinaNewSalary * 12;
-        int mashaDiffYear = mashaNewSalaryYear - mashaSalaryYear;
-        int denisDiffYear = denisNewSalaryYear - denisSalaryYear;
-        int kristinaDiffYear = kristinaNewSalaryYear - kristinaSalaryYear;
+        double mashaNewSalaryYear = mashaNewSalary * 12;
+        double denisNewSalaryYear = denisNewSalary * 12;
+        double kristinaNewSalaryYear = kristinaNewSalary * 12;
+        double mashaDiffYear = mashaNewSalaryYear - mashaSalaryYear;
+        double denisDiffYear = denisNewSalaryYear - denisSalaryYear;
+        double kristinaDiffYear = kristinaNewSalaryYear - kristinaSalaryYear;
         System.out.println("Маша теперь получает " + mashaNewSalary + " рублей. Годовой доход вырос на " + mashaDiffYear + " рублей");
         System.out.println("Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + denisDiffYear + " рублей");
         System.out.println("Кристина теперь получает " + kristinaNewSalary + " рублей. Годовой доход вырос на " + kristinaDiffYear + " рублей");
